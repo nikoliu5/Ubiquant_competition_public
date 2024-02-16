@@ -1,7 +1,7 @@
 from trade_mgmt import Order, Trade, OrderStatus, Side
 from data_manager import DataManager
 from position_manager import PositionManager
-from interface_class import InterfaceClass
+from interface import InterfaceClass
 import pandas as pd
 
 

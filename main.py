@@ -1,4 +1,4 @@
-from interface_class import InterfaceClass
+from interface import InterfaceClass
 from data_manager import DataManager
 from broker import Broker
 from strategy import Strategy
