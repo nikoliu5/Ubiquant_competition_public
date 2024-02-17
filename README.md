@@ -1,5 +1,5 @@
 # High Frequency Trading System for Ubiquant Competition
-This repository is dedicated to a sophisticated high-frequency trading (HFT) system developed for the Ubiquant competition. Unlike traditional market-neutral strategies, this system is engineered to capitalize on short-term market inefficiencies by processing and reacting to tick data within 100 milliseconds. The core of this system is built on asynchronous programming and multiprocessing techniques, enabling it to handle rapid streams of trading data and execute trades at an exceptionally high speed.
+This repository is dedicated to a sophisticated high-frequency trading (HFT) system developed for the Ubiquant competition. Unlike traditional market-neutral strategies, this system is engineered to capitalize on short-term market inefficiencies by processing and **reacting to tick data within 100 milliseconds**. The core of this system is built on asynchronous programming and multiprocessing techniques, enabling it to handle rapid streams of trading data and execute trades at an exceptionally high speed.
 
 ## Features
 - **Asynchronous Data Handling**: Utilizes Python's asyncio library to manage simultaneous data streams and API calls without blocking, ensuring real-time data processing and decision-making.
