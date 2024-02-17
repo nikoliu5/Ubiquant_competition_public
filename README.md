@@ -2,9 +2,9 @@
 This repository is dedicated to a sophisticated high-frequency trading (HFT) system developed for the Ubiquant competition. Unlike traditional market-neutral strategies, this system is engineered to capitalize on short-term market inefficiencies by processing and reacting to tick data within 100 milliseconds. The core of this system is built on asynchronous programming and multiprocessing techniques, enabling it to handle rapid streams of trading data and execute trades at an exceptionally high speed.
 
 ## Features
-- Asynchronous Data Handling: Utilizes Python's asyncio library to manage simultaneous data streams and API calls without blocking, ensuring real-time data processing and decision-making.
-- Multiprocessing for Speed: Implements multiprocessing to distribute data processing and model prediction tasks across multiple CPU cores, significantly enhancing computation speed.
-- Compliance with Rate Limits: Designed to operate within the Ubiquant competition's strict API call rate limits (3000 calls every 10 seconds for Limit Order Book (LOB) updates, among others), ensuring uninterrupted operation.
+- **Asynchronous Data Handling**: Utilizes Python's asyncio library to manage simultaneous data streams and API calls without blocking, ensuring real-time data processing and decision-making.
+- **Multiprocessing for Speed**: Implements multiprocessing to distribute data processing and model prediction tasks across multiple CPU cores, significantly enhancing computation speed.
+- **Compliance with Rate Limits**: Designed to operate within the Ubiquant competition's strict API call rate limits (3000 calls every 10 seconds for Limit Order Book (LOB) updates, among others), ensuring uninterrupted operation.
 
 ## System Structure
 ```
@@ -73,12 +73,12 @@ The core analytical tool in our strategy is an optimized LightGBM model, trained
 ## Further Improvements
 Our high-frequency trading system, while efficient, has areas for enhancement to boost performance and stability:
 
-- Model Overfitting: The LightGBM model, pivotal for predicting stock movements, risks overfitting to current market data. Implementing advanced validation and regularization methods could mitigate this, ensuring more consistent performance across different market conditions.
+- **Model Overfitting**: The LightGBM model, pivotal for predicting stock movements, risks overfitting to current market data. Implementing advanced validation and regularization methods could mitigate this, ensuring more consistent performance across different market conditions.
 
-- Unrealized PnL Calculation: Accurate computation of unrealized profit and loss (PnL) is challenging during volatile market swings. Improving these calculations will offer a more accurate financial overview, aiding better decision-making.
+- **Unrealized PnL Calculation**: Accurate computation of unrealized profit and loss (PnL) is challenging during volatile market swings. Improving these calculations will offer a more accurate financial overview, aiding better decision-making.
 
-- Risk Management: Current risk management strategies need strengthening, especially in minimizing losses during significant drawdowns. Developing sophisticated risk mitigation algorithms will enhance the system's resilience against adverse market trends.
+- **Risk Management**: Current risk management strategies need strengthening, especially in minimizing losses during significant drawdowns. Developing sophisticated risk mitigation algorithms will enhance the system's resilience against adverse market trends.
 
-- Target Variable Design: The target variable that guides the predictive model could be refined. A more accurately designed target variable, possibly incorporating a broader range of market indicators, will improve the model's comprehension of stock price movements and stability.
+- **Target Variable Design**: The target variable that guides the predictive model could be refined. A more accurately designed target variable, possibly incorporating a broader range of market indicators, will improve the model's comprehension of stock price movements and stability.
 
 Addressing these areas will not only enhance the system's accuracy and reliability but also ensure sustained competitive performance in high-frequency trading environments.
