@@ -1,4 +1,4 @@
-# Ubiquant_competition_public
+# High Frequency Trading System for Ubiquant Competition
 This repository is dedicated to a sophisticated high-frequency trading (HFT) system developed for the Ubiquant competition. Unlike traditional market-neutral strategies, this system is engineered to capitalize on short-term market inefficiencies by processing and reacting to tick data within 100 milliseconds. The core of this system is built on asynchronous programming and multiprocessing techniques, enabling it to handle rapid streams of trading data and execute trades at an exceptionally high speed.
 
 ## Features
@@ -7,6 +7,7 @@ This repository is dedicated to a sophisticated high-frequency trading (HFT) sys
 - Compliance with Rate Limits: Designed to operate within the Ubiquant competition's strict API call rate limits (3000 calls every 10 seconds for Limit Order Book (LOB) updates, among others), ensuring uninterrupted operation.
 
 ## System Structure
+```
 Ubiquant High Frequency Trading System
 |
 ├── main.py - Entry point, orchestrates the bot's operation cycle.
@@ -58,3 +59,4 @@ Ubiquant High Frequency Trading System
 |   ├── send_order() - Interface method to send orders to the market.
 |   |
 |   └── get_market_data() - Retrieves and processes market data from the trading platform.
+```
